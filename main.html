@@ -1,16 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-<title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interstellar</title>
+    <style>
+        .mycontainer {
+            width: 100%;
+            overflow: auto;
+        }
+        .mycontainer div {
+            width: 33%;
+            float: left;
+        }
+    </style>
 </head>
 <body>
-<h1>Interstellar</h1>
-<p>научно-фантастический фильм 2014 года режиссёра Кристофера Нолана.</p>
-<a href="https://kinogo.ec/17487-interstellar.html" alt="Interstellar"
+    <h1>Interstellar</h1>
+    <p>Научно-фантастический фильм 2014 года режиссера Кристофера Нолана</p>
+    <a href="https://kinogo.ec/17487-interstellar.html" target="_blank">Смотреть фильм</a>
 
-<img src="c:\Users\USER\OneDrive\Desktop\index.html\interstellar.jpg" width="104" height="104">
-<p style="color:blue;">My favourite film.</p>
+    
+    <img src="c:\Users\USER\OneDrive\Desktop\index.html\interstellar.jpg" alt="Interstellar" width="300">
+    <p style="color:blue;">My favourite film.</p>
+    <img src="c:\Users\USER\OneDrive\Desktop\index.html\volga.jpg" alt="Volga" width="300">
 
-<img src="c:\Users\USER\OneDrive\Desktop\index.html\volga.jpg"
+    <h1>Награды</h1>
+
+    <div class="mycontainer">
+        <div style="background-color:#FFF4A3;">
+            <h2>Оскар</h2>
+            <p>За лучшие визуальные эффекты.</p>
+            <p>За лучший звуковой монтаж.</p>
+        </div>
+
+        <div style="background-color:#FFC0C7;">
+            <h2>Золотой глобус</h2>
+            <p>За лучшую музыку к фильму.</p>
+            <p>Престижная награда Голливудской ассоциации иностранной прессы, присуждаемая ежегодно с 1948 года.</p>
+        </div>
+
+        <div style="background-color:#D9EEE1;">
+            <h2>Кинопремия "Империя"</h2>
+            <p>Одна из номинаций Empire Awards, присужденная журналом Empire.</p>
+            <p>Самый лучший фильм 2014 года.</p>
+        </div>
+    </div>  
+
+    <a href="next.html">Перейти на следующую страницу</a>
+    <button onclick="window.location.href='next.html'">Перейти</button>  
 </body>
 </html>
