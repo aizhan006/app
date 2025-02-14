@@ -1,0 +1,87 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #555;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        figure {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 320px;
+        }
+
+        .gallery img {
+            width: 300px; /* Стандартный размер */
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        figcaption {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #444;
+            font-weight: bold;
+        }
+
+        /* Меняем размер только последнего фото */
+        .gallery figure:last-child img {
+            width: 400px; /* Увеличенный размер */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Галерея природы</h1>
+    <p>Добро пожаловать в нашу галерею! Здесь собраны красивые пейзажи.</p>
+
+    <div class="gallery">
+        <figure>
+            <img src="c:\Users\USER\OneDrive\Pictures\Camera Roll\1-Tien-Shan-e1527736358501.jpg" alt="Горы Тянь-Шань">
+            <figcaption>Горы Тянь-Шань</figcaption>
+        </figure>
+        <figure>
+            <img src="c:\Users\USER\OneDrive\Pictures\Camera Roll\3-Altyn_Arashan-1-e1527736866250.jpg" alt="Ущелье Алтын Арашан">
+            <figcaption>Ущелье Алтын-Арашан</figcaption>
+        </figure>
+        <figure>
+            <img src="c:\Users\USER\OneDrive\Pictures\Camera Roll\images.jpg" alt="Иссык-Куль, Рух Ордо">
+            <figcaption>Иссык-Куль, Рух Ордо</figcaption>
+        </figure>
+    </div>
+
+</body>
+</html>
