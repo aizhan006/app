@@ -65,8 +65,13 @@
 </head>
 <body>
 
-    <h1>Галерея природы</h1>
-    <p>Добро пожаловать в нашу галерею! Здесь собраны красивые пейзажи.</p>
+    <audio id="bg-music" loop>
+        <source src="We Dont Talk Anymore feat Selena Gomez  - Charlie Puth feat.mp3" type="audio/mpeg">
+    </audio>
+        
+    <button onclick="document.getElementById('bg-music').play()">🎵 Включить музыку</button>
+    <button onclick="document.getElementById('bg-music').pause()">🔇 Выключить музыку</button>
+        
 
     <div class="gallery">
         <figure>
