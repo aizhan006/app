@@ -64,19 +64,11 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item"><a class="nav-link active" href="#">Главная</a></li>
-              <li class="nav-item"><a class="nav-link active" href="bilet.html">Билеты</a></li>
-              <li class="nav-item"><a class="nav-link active" href="#">Туры</a></li>
+              <li class="nav-item"><a class="nav-link active" href="bilet.html">Туры</a></li>
               <li class="nav-item"><a class="nav-link active" href="gallery.html">Галерея</a></li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">О компании</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Контакты</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Отзывы</a></li>
-                </ul>
-              </li>
-            </ul>  
-            <meta charset="UTF-8">
+              <li class="nav-item"><a class="nav-link active" href="com.html">О компании</a></li>
+            </ul>
+          <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>регистрация</title>
     <style>
@@ -126,8 +118,7 @@
          <hr>
          <ul class="nav flex-column">
           <li class="nav-item"><a href="#" class="nav-link">🏠 Главная</a></li>
-          <li class="nav-item"><a href="bilet.html" class="nav-link">Билет</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">✈️ Туры</a></li>
+          <li class="nav-item"><a href="bilet.html" class="nav-link">Туры</a></li>
           <li class="nav-item"><a href="gallery.html" class="nav-link">📷 Галерея</a></li>
           <li class="nav-item"><a href="#" class="nav-link">📞 Контакты</a></li>
           <li class="nav-item"><a href="#" class="nav-link">📖 Блог</a></li>
@@ -221,6 +212,16 @@
               </div>
             </div>
           </div>
-        </div>          
+        </div>        
+<button onclick="scrollToTop()" id="scrollTopBtn" class="btn btn-primary" style="position: fixed; bottom: 20px; right: 20px; display: none;">🔝</button>
+<script>
+  window.onscroll = function() {
+    document.getElementById('scrollTopBtn').style.display = window.pageYOffset > 200 ? "block" : "none";
+  };
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+</script>
+  
   </body>
 </html>
